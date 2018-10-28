@@ -1,5 +1,3 @@
-// Expenses Reducer
-
 const todoReducerDefaultState = [];
 
 export default (state = todoReducerDefaultState, action) => {
@@ -7,23 +5,23 @@ export default (state = todoReducerDefaultState, action) => {
     case 'ADD':
       return [
         ...state,
-        action.todo
+        action.option
       ];
     case 'REMOVE':
       return state.filter(({ id }) => id !== action.id);
     case 'EDIT':
-      return state.map((todo) => {
-        if (todo.id === action.id) {
+      return state.map((option) => {
+        if (option.id === action.id) {
           return {
-            ...todo,
+            ...option,
             ...action.updates
-          };
+          }
         } else {
-          return todo;
-        };
+          return option;
+        }
       });
     case 'SET':
-      return action.todos;
+      return action.options;
     default:
       return state;
   }

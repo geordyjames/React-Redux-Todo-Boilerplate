@@ -1,17 +1,36 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { remove } from '../actions/todo';
 
-export const HomePage = ({ name }) => (
+import AddOption from './AddOption';
+import Options from './Options';
+
+export const HomePage = props => (
 	<div>
 		<h1>
-			{name}
+			{props.name}
 			's React Redux Todo App
 		</h1>
+		<div className="widget">
+			<Options
+				options={props.todo}
+				handleDeleteOption={props.handleDeleteOption}
+			/>
+			<AddOption />
+		</div>
 	</div>
 );
 
-const mapStateToProps = (state, props) => ({
-	name: state.auth.name
+const mapStateToProps = state => ({
+	name: state.auth.name,
+	todo: state.todo
 });
 
-export default connect(mapStateToProps)(HomePage);
+const mapDispatchToProps = dispatch => ({
+	handleDeleteOption: id => dispatch(remove(id))
+});
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(HomePage);
