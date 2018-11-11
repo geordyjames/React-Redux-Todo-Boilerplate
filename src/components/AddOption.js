@@ -1,13 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { add } from '../actions/todo';
+import InputError from './InputError';
 
-class AddOption extends React.Component {
+export class AddOption extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			error: undefined
+			error: null
 		};
 
 		this.handleAddOption = this.handleAddOption.bind(this);
@@ -28,9 +29,6 @@ class AddOption extends React.Component {
 			);
 		} else {
 			await Promise.resolve(this.setState(() => ({ error: null })));
-		}
-
-		if (!this.state.error) {
 			this.props.handleAddOption(option);
 			e.target.elements.option.value = '';
 		}
@@ -39,21 +37,16 @@ class AddOption extends React.Component {
 	render() {
 		return (
 			<form className="uk-margin" onSubmit={this.handleAddOption}>
-				<div className="uk-margin" data-uk-margin>
-					<input
+				<input
 					className="uk-input uk-form-width-medium"
-						type="text"
-						name="option"
-					/>
-					<button className="uk-button uk-button-primary uk-margin-left uk-text-bold">
-						<span data-uk-icon="plus"></span> Add Option
-					</button>
-				</div>
-				{this.state.error && (
-					<p className="uk-margin uk-text-center uk-text-danger">
-						{this.state.error}
-					</p>
-				)}
+					type="text"
+					name="option"
+					placeholder="Enter a value"
+				/>
+				<button className="uk-button uk-button-primary uk-margin-left uk-text-bold">
+					<span data-uk-icon="plus" /> Add Option
+				</button>
+				{this.state.error && <InputError error={this.state.error} />}
 			</form>
 		);
 	}

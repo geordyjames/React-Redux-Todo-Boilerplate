@@ -4,7 +4,7 @@ import Option from './Option';
 const Options = props => (
 	<Fragment>
 		{props.options.length === 0 && (
-			<p className="uk-text-center uk-text-primary">Please add an option to get started!</p>
+			<p className="uk-text-primary">Please add an option to get started!</p>
 		)}
 		<ul className="uk-list uk-list-divider uk-padding">
 			{props.options.map((option, index) => (

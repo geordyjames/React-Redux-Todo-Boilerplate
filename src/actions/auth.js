@@ -6,9 +6,8 @@ export const login = (name) => ({
   name
 });
 
-export const startLogin = () => {
+export const startLogin = (name) => {
 	return dispatch => {
-		const name = 'Geordy';
 		setTimeout(() => { // To demo asynchronous fn
 			dispatch(login(name));
 		}, 100)

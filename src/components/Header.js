@@ -2,14 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
+import logo from '../images/logo.png';
+
 
 export const Header = ({ startLogout }) => (
 	<nav className="uk-navbar-container uk-navbar-transparent header" data-uk-navbar>
 		<div className="uk-navbar-left  uk-logo">
 			<Link
         className="uk-navbar-item uk-logo uk-text-bold header__logo"
-				to="/home"
+				to="/"
 			>
+				<img src={logo} alt="Logo" />
 				React Redux Todo Boilerplate
 			</Link>
 		</div>

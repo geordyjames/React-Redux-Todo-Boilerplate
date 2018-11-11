@@ -1,15 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { remove } from '../actions/todo';
-
 import AddOption from './AddOption';
 import Options from './Options';
 
 export const HomePage = props => (
 	<div className="uk-container">
 		<h1 className="uk-heading-primary uk-text-center uk-padding ">
-			{props.name}
-			's Todo List
+			{props.name}'s Todo List
 		</h1>
 		<div className="uk-text-center">
 			<AddOption />

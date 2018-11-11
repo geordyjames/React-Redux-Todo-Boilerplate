@@ -8,7 +8,7 @@ const Option = props => (
 		<button
 			className="uk-icon-button uk-align-right"
 			data-uk-icon="icon: trash"
-			onClick={e => {
+			onClick={() => {
 				props.handleDeleteOption(props.id);
 			}}
 		/>
