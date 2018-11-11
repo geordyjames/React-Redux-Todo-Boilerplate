@@ -1,6 +1,6 @@
 # React Redux Todo Boilerplate
 
-React Redux Todo Boilerplate is a very simple react-redux application created to have a quick boiler plate for your react-redux project. It is created using create-react-app version 2. Here are some of features included in this boilerplate
+React Redux Todo Boilerplate is a very simple react-redux project created to have a quick boilerplate for your react-redux project. It is created using create-react-app version 2. Here are some of features included in this boilerplate.
 
   - Shows how to use multiple reducers
   - Redux Thunk integration for handling aynsc tasks
