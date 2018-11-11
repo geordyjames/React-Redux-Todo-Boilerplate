@@ -14,23 +14,21 @@ class AddOption extends React.Component {
 	}
 
 	async handleAddOption(e) {
-    e.preventDefault();
-    e.persist();
-    const option = e.target.elements.option.value.trim();
+		e.preventDefault();
+		e.persist();
+		const option = e.target.elements.option.value.trim();
 
 		if (!option) {
 			await Promise.resolve(
 				this.setState(() => ({ error: 'Enter valid value to add item' }))
 			);
-		} else if (this.props.todo.find((todo) => todo.name === option)) {
+		} else if (this.props.todo.find(todo => todo.name === option)) {
 			await Promise.resolve(
 				this.setState(() => ({ error: 'This option already exists' }))
 			);
 		} else {
-      await Promise.resolve(
-				this.setState(() => ({ error: null }))
-			);
-    }
+			await Promise.resolve(this.setState(() => ({ error: null })));
+		}
 
 		if (!this.state.error) {
 			this.props.handleAddOption(option);
@@ -40,15 +38,23 @@ class AddOption extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<form className="uk-margin" onSubmit={this.handleAddOption}>
+				<div className="uk-margin" data-uk-margin>
+					<input
+					className="uk-input uk-form-width-medium"
+						type="text"
+						name="option"
+					/>
+					<button className="uk-button uk-button-primary uk-margin-left uk-text-bold">
+						<span data-uk-icon="plus"></span> Add Option
+					</button>
+				</div>
 				{this.state.error && (
-					<p className="add-option-error">{this.state.error}</p>
+					<p className="uk-margin uk-text-center uk-text-danger">
+						{this.state.error}
+					</p>
 				)}
-				<form className="add-option" onSubmit={this.handleAddOption}>
-					<input className="add-option__input" type="text" name="option" />
-					<button className="button">Add Option</button>
-				</form>
-			</div>
+			</form>
 		);
 	}
 }

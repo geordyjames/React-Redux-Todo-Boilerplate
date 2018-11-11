@@ -6,17 +6,19 @@ import AddOption from './AddOption';
 import Options from './Options';
 
 export const HomePage = props => (
-	<div>
-		<h1>
+	<div className="uk-container">
+		<h1 className="uk-heading-primary uk-text-center uk-padding ">
 			{props.name}
-			's React Redux Todo App
+			's Todo List
 		</h1>
-		<div className="widget">
+		<div className="uk-text-center">
+			<AddOption />
+		</div>
+		<div className="uk-flex uk-flex-center">
 			<Options
 				options={props.todo}
 				handleDeleteOption={props.handleDeleteOption}
 			/>
-			<AddOption />
 		</div>
 	</div>
 );

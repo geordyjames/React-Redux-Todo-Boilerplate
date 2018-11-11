@@ -3,16 +3,24 @@ import { connect } from 'react-redux';
 import { startLogin } from '../actions/auth';
 
 export const LoginPage = ({ startLogin }) => (
-  <div className="box-layout">
-    <div className="box-layout__box">
-      <h1 className="box-layout__title">React Redux Todo App</h1>
-      <button className="button" onClick={startLogin}>Login</button>
-    </div>
-  </div>
+	<div
+		className="uk-flex uk-flex-center uk-flex-middle"
+		style={{ height: '100vh' }}
+	>
+		<div className="uk-text-center">
+			<h1 className="uk-heading-hero">React Redux Todo Boilerplate</h1>
+			<button className="uk-button uk-button-primary uk-text-bold" onClick={startLogin}>
+        <span data-uk-icon="sign-in"></span> Login
+			</button>
+		</div>
+	</div>
 );
 
-const mapDispatchToProps = (dispatch) => ({
-  startLogin: () => dispatch(startLogin())
+const mapDispatchToProps = dispatch => ({
+	startLogin: () => dispatch(startLogin())
 });
 
-export default connect(undefined, mapDispatchToProps)(LoginPage);
+export default connect(
+	undefined,
+	mapDispatchToProps
+)(LoginPage);

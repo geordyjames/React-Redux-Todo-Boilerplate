@@ -2,8 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NotFoundPage = () => (
-	<div>
-		404 - <Link to="/">Go home</Link>
+	<div
+		className="uk-flex uk-flex-center uk-flex-middle"
+		style={{ height: '100vh' }}
+	>
+		404 -{' '}
+		<Link className="uk-button uk-button-default" to="/">
+			Go home
+		</Link>
 	</div>
 );
 

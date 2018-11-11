@@ -1,25 +1,23 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Option from './Option';
 
 const Options = props => (
-	<div>
-		<div className="widget-header">
-			<h3 className="widget-header__title">Your Options</h3>
-		</div>
-
+	<Fragment>
 		{props.options.length === 0 && (
-			<p className="widget__message">Please add an option to get started!</p>
+			<p className="uk-text-center uk-text-primary">Please add an option to get started!</p>
 		)}
-		{props.options.map((option, index) => (
-			<Option
-        key={option.id}
-        id={option.id}
-        optionText={option.name}
-				count={index + 1}
-				handleDeleteOption={props.handleDeleteOption}
-			/>
-		))}
-	</div>
+		<ul className="uk-list uk-list-divider uk-padding">
+			{props.options.map((option, index) => (
+				<Option
+					key={option.id}
+					id={option.id}
+					optionText={option.name}
+					count={index + 1}
+					handleDeleteOption={props.handleDeleteOption}
+				/>
+			))}
+		</ul>
+	</Fragment>
 );
 
 export default Options;

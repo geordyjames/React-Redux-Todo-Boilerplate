@@ -9,7 +9,9 @@ export const login = (name) => ({
 export const startLogin = () => {
 	return dispatch => {
 		const name = 'Geordy';
-		dispatch(login(name));
+		setTimeout(() => { // To demo asynchronous fn
+			dispatch(login(name));
+		}, 500)
 	};
 };
 
@@ -19,6 +21,8 @@ export const logout = () => ({
 
 export const startLogout = () => {
 	return dispatch => {
-		dispatch(logout());
+		setTimeout(() => { // To demo asynchronous fn
+			dispatch(logout());
+		}, 500)
 	};
 };

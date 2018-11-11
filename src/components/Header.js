@@ -4,21 +4,30 @@ import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
 
 export const Header = ({ startLogout }) => (
-  <header className="header">
-    <div className="content-container">
-      <div className="header__content">
-        <Link className="header__title" to="/dashboard">
-          <h1>React Redux Todo App</h1>
-        </Link>
-        <button className="button button--link" onClick={startLogout}>Logout</button>
-      </div>
-    </div>
-  </header>
+	<nav className="uk-navbar-container uk-navbar-transparent header" data-uk-navbar>
+		<div className="uk-navbar-left  uk-logo">
+			<Link
+        className="uk-navbar-item uk-logo uk-text-bold header__logo"
+				to="/home"
+			>
+				React Redux Todo Boilerplate
+			</Link>
+		</div>
+		<div className="uk-navbar-right">
+			<div className="uk-navbar-item">
+				<button className="uk-button uk-button-default" onClick={startLogout}>
+          <span data-uk-icon="sign-out"></span> Logout
+				</button>
+			</div>
+		</div>
+	</nav>
 );
 
-const mapDispatchToProps = (dispatch) => ({
-  startLogout: () => dispatch(startLogout())
+const mapDispatchToProps = dispatch => ({
+	startLogout: () => dispatch(startLogout())
 });
 
-export default connect(undefined, mapDispatchToProps)(Header);
-
+export default connect(
+	undefined,
+	mapDispatchToProps
+)(Header);

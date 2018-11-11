@@ -17,7 +17,7 @@
     "react-scripts": "2.0.5",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
-    "uikit": "^3.0.0-rc.20",
+    "uikit": "^3.0.0-rc.22",
     "uuid": "^3.3.2"
   },
   "scripts": {
