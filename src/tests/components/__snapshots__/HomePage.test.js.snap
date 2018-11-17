@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render HomePage correctly 1`] = `
+<div
+  className="uk-container"
+>
+  <h1
+    className="uk-heading-primary uk-text-center uk-padding "
+  >
+    Hello
+    's Todo List
+  </h1>
+  <div
+    className="uk-text-center"
+  >
+    <Connect(AddOption) />
+  </div>
+  <div
+    className="uk-flex uk-flex-center"
+  >
+    <Options
+      handleDeleteOption={[Function]}
+      options={
+        Array [
+          Object {
+            "id": "1",
+            "name": "Gum",
+          },
+          Object {
+            "id": "2",
+            "name": "Rent",
+          },
+          Object {
+            "id": "3",
+            "name": "Credit Card",
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;

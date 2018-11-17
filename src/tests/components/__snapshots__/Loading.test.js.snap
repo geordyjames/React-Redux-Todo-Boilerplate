@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Loading with empty props correctly 1`] = `""`;
+
+exports[`should render Loading with error prop correctly 1`] = `
+<div
+  className="uk-flex uk-flex-center uk-flex-middle half-height"
+>
+  Error!
+  <button
+    className="uk-button uk-button-danger uk-text-bold uk-margin-left"
+  >
+    Retry
+  </button>
+</div>
+`;
+
+exports[`should render Loading with pastDelay prop correctly 1`] = `
+<div
+  className="uk-flex uk-flex-center uk-flex-middle half-height"
+>
+  <div
+    data-uk-spinner="ratio: 3"
+  />
+</div>
+`;
+
+exports[`should render Loading with timedOut prop correctly 1`] = `
+<div
+  className="uk-flex uk-flex-center uk-flex-middle half-height"
+>
+  Taking a long time...
+  <button
+    className="uk-button uk-button-danger uk-text-bold uk-margin-left"
+  >
+    Retry
+  </button>
+</div>
+`;

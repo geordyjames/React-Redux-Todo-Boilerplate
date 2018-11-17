@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render MyLoadable with empty props correctly 1`] = `<Component />`;
+
+exports[`should render MyLoadable with opts props correctly 1`] = `<Component />`;

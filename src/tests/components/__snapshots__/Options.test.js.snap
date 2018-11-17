@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Options with empty todo  correctly 1`] = `
+<Fragment>
+  <p
+    className="uk-text-primary"
+  >
+    Please add an option to get started!
+  </p>
+  <ul
+    className="uk-list uk-list-divider uk-padding"
+  />
+</Fragment>
+`;
+
+exports[`should render Options with todos correctly 1`] = `
+<Fragment>
+  <ul
+    className="uk-list uk-list-divider uk-padding"
+  >
+    <Option
+      count={1}
+      handleDeleteOption={[Function]}
+      id="1"
+      key="1"
+      optionText="Gum"
+    />
+    <Option
+      count={2}
+      handleDeleteOption={[Function]}
+      id="2"
+      key="2"
+      optionText="Rent"
+    />
+    <Option
+      count={3}
+      handleDeleteOption={[Function]}
+      id="3"
+      key="3"
+      optionText="Credit Card"
+    />
+  </ul>
+</Fragment>
+`;

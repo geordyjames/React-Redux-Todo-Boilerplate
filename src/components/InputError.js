@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Error = ({error}) => (
+const InputError = ({error}) => (
   <div className="uk-alert-danger" data-uk-alert>
     <p> {error} </p>
   </div>
 );
 
-export default Error;
+export default InputError;

@@ -8,6 +8,7 @@ React Redux Todo Boilerplate is a very simple react-redux project created to hav
   - Sample login system with route redirection based on user login 
   - Uikit 3 (Modern CSS Framework) and BEM (Block Element Modifier) for Styling
   - Redux dev tool integration
+  - Unit tests using Jest and Enzyme
   - Heroku integration
 
 #### Online Demo

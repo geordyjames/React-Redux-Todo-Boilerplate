@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<nav
+  className="uk-navbar-container uk-navbar-transparent header"
+  data-uk-navbar={true}
+>
+  <div
+    className="uk-navbar-left  uk-logo"
+  >
+    <Link
+      className="uk-navbar-item uk-logo uk-text-bold header__logo"
+      replace={false}
+      to="/"
+    >
+      <img
+        alt="Logo"
+        src="logo.png"
+      />
+      React Redux Todo Boilerplate
+    </Link>
+  </div>
+  <div
+    className="uk-navbar-right"
+  >
+    <div
+      className="uk-navbar-item"
+    >
+      <button
+        className="uk-button uk-button-default"
+        onClick={[Function]}
+      >
+        <span
+          data-uk-icon="sign-out"
+        />
+         Logout
+      </button>
+    </div>
+  </div>
+</nav>
+`;

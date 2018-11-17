@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Option correctly 1`] = `
+<li>
+  <p
+    className="uk-text-middle uk-align-left uk-margin-small-bottom"
+  >
+    . 
+  </p>
+  <button
+    className="uk-icon-button uk-align-right"
+    data-uk-icon="icon: trash"
+    onClick={[Function]}
+  />
+</li>
+`;
+
+exports[`should render Option with values correctly 1`] = `
+<li>
+  <p
+    className="uk-text-middle uk-align-left uk-margin-small-bottom"
+  >
+    5
+    . 
+    Hello
+  </p>
+  <button
+    className="uk-icon-button uk-align-right"
+    data-uk-icon="icon: trash"
+    onClick={[Function]}
+  />
+</li>
+`;

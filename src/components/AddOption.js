@@ -14,21 +14,17 @@ export class AddOption extends React.Component {
 		this.handleAddOption = this.handleAddOption.bind(this);
 	}
 
-	async handleAddOption(e) {
+	handleAddOption(e) {
 		e.preventDefault();
 		e.persist();
 		const option = e.target.elements.option.value.trim();
 
 		if (!option) {
-			await Promise.resolve(
-				this.setState(() => ({ error: 'Enter valid value to add item' }))
-			);
+			this.setState(() => ({ error: 'Enter valid value to add item' }))
 		} else if (this.props.todo.find(todo => todo.name === option)) {
-			await Promise.resolve(
-				this.setState(() => ({ error: 'This option already exists' }))
-			);
+			this.setState(() => ({ error: 'This option already exists' }))
 		} else {
-			await Promise.resolve(this.setState(() => ({ error: null })));
+			this.setState(() => ({ error: null }));
 			this.props.handleAddOption(option);
 			e.target.elements.option.value = '';
 		}

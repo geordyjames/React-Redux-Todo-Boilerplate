@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render LoginPage correctly 1`] = `
+<div
+  className="uk-flex uk-flex-center uk-flex-middle full-height"
+>
+  <div
+    className="uk-text-center"
+  >
+    <img
+      alt="Logo"
+      src="logo.png"
+    />
+    <h1
+      className="uk-heading-hero"
+    >
+      React Redux Todo Boilerplate
+    </h1>
+    <form
+      className="uk-padding"
+      onSubmit={[Function]}
+    >
+      <input
+        className="uk-input uk-form-width-medium"
+        name="name"
+        placeholder="Enter your name"
+        type="text"
+      />
+      <button
+        className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+      >
+        <span
+          data-uk-icon="sign-in"
+        />
+         Login
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`should render LoginPage for valid form submission 1`] = `
+<div
+  className="uk-flex uk-flex-center uk-flex-middle full-height"
+>
+  <div
+    className="uk-text-center"
+  >
+    <img
+      alt="Logo"
+      src="logo.png"
+    />
+    <h1
+      className="uk-heading-hero"
+    >
+      React Redux Todo Boilerplate
+    </h1>
+    <form
+      className="uk-padding"
+      onSubmit={[Function]}
+    >
+      <input
+        className="uk-input uk-form-width-medium"
+        name="name"
+        placeholder="Enter your name"
+        type="text"
+      />
+      <button
+        className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+      >
+        <span
+          data-uk-icon="sign-in"
+        />
+         Login
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`should render LoginPage for valid form submission 2`] = `
+<div
+  className="uk-flex uk-flex-center uk-flex-middle full-height"
+>
+  <div
+    className="uk-text-center"
+  >
+    <img
+      alt="Logo"
+      src="logo.png"
+    />
+    <h1
+      className="uk-heading-hero"
+    >
+      React Redux Todo Boilerplate
+    </h1>
+    <form
+      className="uk-padding"
+      onSubmit={[Function]}
+    >
+      <input
+        className="uk-input uk-form-width-medium"
+        name="name"
+        placeholder="Enter your name"
+        type="text"
+      />
+      <button
+        className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+      >
+        <span
+          data-uk-icon="sign-in"
+        />
+         Login
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`should render error for invalid form submission 1`] = `
+<div
+  className="uk-flex uk-flex-center uk-flex-middle full-height"
+>
+  <div
+    className="uk-text-center"
+  >
+    <img
+      alt="Logo"
+      src="logo.png"
+    />
+    <h1
+      className="uk-heading-hero"
+    >
+      React Redux Todo Boilerplate
+    </h1>
+    <form
+      className="uk-padding"
+      onSubmit={[Function]}
+    >
+      <input
+        className="uk-input uk-form-width-medium"
+        name="name"
+        placeholder="Enter your name"
+        type="text"
+      />
+      <button
+        className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+      >
+        <span
+          data-uk-icon="sign-in"
+        />
+         Login
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`should render error for invalid form submission 2`] = `
+<div
+  className="uk-flex uk-flex-center uk-flex-middle full-height"
+>
+  <div
+    className="uk-text-center"
+  >
+    <img
+      alt="Logo"
+      src="logo.png"
+    />
+    <h1
+      className="uk-heading-hero"
+    >
+      React Redux Todo Boilerplate
+    </h1>
+    <form
+      className="uk-padding"
+      onSubmit={[Function]}
+    >
+      <input
+        className="uk-input uk-form-width-medium"
+        name="name"
+        placeholder="Enter your name"
+        type="text"
+      />
+      <button
+        className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+      >
+        <span
+          data-uk-icon="sign-in"
+        />
+         Login
+      </button>
+      <InputError
+        error="Enter your name to login"
+      />
+    </form>
+  </div>
+</div>
+`;

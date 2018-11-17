@@ -1,16 +1,19 @@
 import uuid from 'uuid';
 
-export const login = (name) => ({
+const delay = time => new Promise(resolve => setTimeout(resolve, time));
+
+export const login = name => ({
 	type: 'LOGIN',
-  id: uuid(),
-  name
+	id: uuid(),
+	name
 });
 
-export const startLogin = (name) => {
+export const startLogin = name => {
 	return dispatch => {
-		setTimeout(() => { // To demo asynchronous fn
+		// To demo asynchronous fn
+		return delay(100).then(() => {
 			dispatch(login(name));
-		}, 100)
+		});
 	};
 };
 
@@ -20,8 +23,9 @@ export const logout = () => ({
 
 export const startLogout = () => {
 	return dispatch => {
-		setTimeout(() => { // To demo asynchronous fn
+		// To demo asynchronous fn
+		return delay(100).then(() => {
 			dispatch(logout());
-		}, 100)
+		});
 	};
 };

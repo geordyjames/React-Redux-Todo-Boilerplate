@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddOption correctly 1`] = `
+<form
+  className="uk-margin"
+  onSubmit={[Function]}
+>
+  <input
+    className="uk-input uk-form-width-medium"
+    name="option"
+    placeholder="Enter a value"
+    type="text"
+  />
+  <button
+    className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+  >
+    <span
+      data-uk-icon="plus"
+    />
+     Add Option
+  </button>
+</form>
+`;
+
+exports[`should render AddOption for valid form submission 1`] = `
+<form
+  className="uk-margin"
+  onSubmit={[Function]}
+>
+  <input
+    className="uk-input uk-form-width-medium"
+    name="option"
+    placeholder="Enter a value"
+    type="text"
+  />
+  <button
+    className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+  >
+    <span
+      data-uk-icon="plus"
+    />
+     Add Option
+  </button>
+</form>
+`;
+
+exports[`should render AddOption for valid form submission 2`] = `
+<form
+  className="uk-margin"
+  onSubmit={[Function]}
+>
+  <input
+    className="uk-input uk-form-width-medium"
+    name="option"
+    placeholder="Enter a value"
+    type="text"
+  />
+  <button
+    className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+  >
+    <span
+      data-uk-icon="plus"
+    />
+     Add Option
+  </button>
+</form>
+`;
+
+exports[`should render error for duplicate form submission 1`] = `
+<form
+  className="uk-margin"
+  onSubmit={[Function]}
+>
+  <input
+    className="uk-input uk-form-width-medium"
+    name="option"
+    placeholder="Enter a value"
+    type="text"
+  />
+  <button
+    className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+  >
+    <span
+      data-uk-icon="plus"
+    />
+     Add Option
+  </button>
+</form>
+`;
+
+exports[`should render error for duplicate form submission 2`] = `
+<form
+  className="uk-margin"
+  onSubmit={[Function]}
+>
+  <input
+    className="uk-input uk-form-width-medium"
+    name="option"
+    placeholder="Enter a value"
+    type="text"
+  />
+  <button
+    className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+  >
+    <span
+      data-uk-icon="plus"
+    />
+     Add Option
+  </button>
+  <InputError
+    error="This option already exists"
+  />
+</form>
+`;
+
+exports[`should render error for invalid form submission 1`] = `
+<form
+  className="uk-margin"
+  onSubmit={[Function]}
+>
+  <input
+    className="uk-input uk-form-width-medium"
+    name="option"
+    placeholder="Enter a value"
+    type="text"
+  />
+  <button
+    className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+  >
+    <span
+      data-uk-icon="plus"
+    />
+     Add Option
+  </button>
+</form>
+`;
+
+exports[`should render error for invalid form submission 2`] = `
+<form
+  className="uk-margin"
+  onSubmit={[Function]}
+>
+  <input
+    className="uk-input uk-form-width-medium"
+    name="option"
+    placeholder="Enter a value"
+    type="text"
+  />
+  <button
+    className="uk-button uk-button-primary uk-margin-left uk-text-bold"
+  >
+    <span
+      data-uk-icon="plus"
+    />
+     Add Option
+  </button>
+  <InputError
+    error="Enter valid value to add item"
+  />
+</form>
+`;

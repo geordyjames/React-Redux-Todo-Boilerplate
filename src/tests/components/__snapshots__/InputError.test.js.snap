@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render InputError with error prop correctly 1`] = `
+<div
+  className="uk-alert-danger"
+  data-uk-alert={true}
+>
+  <p>
+     
+    Some Error Message
+     
+  </p>
+</div>
+`;
+
+exports[`should render InputError with no error prop correctly 1`] = `
+<div
+  className="uk-alert-danger"
+  data-uk-alert={true}
+>
+  <p>
+     
+     
+  </p>
+</div>
+`;

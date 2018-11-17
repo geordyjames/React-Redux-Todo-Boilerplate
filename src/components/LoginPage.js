@@ -15,16 +15,14 @@ export class LoginPage extends React.Component {
 		this.startLogin = this.startLogin.bind(this);
 	}
 
-	async startLogin(e) {
+	startLogin(e) {
 		e.preventDefault();
 		const name = e.target.elements.name.value.trim();
 
 		if (!name) {
-			await Promise.resolve(
-				this.setState(() => ({ error: 'Enter your name to login' }))
-			);
+			this.setState(() => ({ error: 'Enter your name to login' }));
 		} else {
-			await Promise.resolve(this.setState(() => ({ error: null })));
+			this.setState(() => ({ error: null }));
 			this.props.startLogin(name);
 		}
 	}
