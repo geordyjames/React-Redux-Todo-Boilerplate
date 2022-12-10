@@ -5,7 +5,7 @@
   "author": "Geordy James",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "history": "^4.7.2",
     "node-sass": "^4.9.4",
     "normalize.css": "^8.0.0",
